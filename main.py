@@ -78,4 +78,7 @@ planocart()
 for x in range(-100, 101):
     t.goto(2*x, func6(2*x))
 
+
+
+
 mainloop()
