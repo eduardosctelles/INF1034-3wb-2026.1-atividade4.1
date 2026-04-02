@@ -22,16 +22,10 @@ def planocart():
     t.speed(6)
  
 def func1(x):
-    if x >= 0:
-        return x**0.5
-    else:
-        return None
+    return x**0.5
  
 def func2(x):
-    if x != 0:
-        return 1 / x
-    else:
-        return None
+    return 1/x
  
 def func3(x):
     return 2**x
@@ -56,7 +50,7 @@ t.clear()
 t.right(90)
 planocart()
 
-ir(1, func2(x*0.01))
+ir(1, func2(x*0.0001))
 for x in range(2, 600):
     t.goto(x/2, func2(x/2) * 50)
 
