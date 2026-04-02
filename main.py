@@ -56,9 +56,9 @@ t.clear()
 t.right(90)
 planocart()
 
-ir(1, func2(x*0.001))
+ir(1, func2(x*0.0001))
 for x in range(2, 300):
-    t.goto(x, func2(x)/1000)
+    t.goto(x*10, func2(x)/1000)
 
 sleep(3)
 t.clear()
@@ -66,7 +66,7 @@ t.right(90)
 planocart()
 
 ir(-150, func3(-15))
-for x in range(-14, 16):
+for x in range(-14, 9):
     t.goto(x*10, func3(x))
 
 sleep(3)
@@ -84,7 +84,7 @@ t.right(90)
 planocart()
 
 ir(-150, func5(-15))
-for x in range(-14, 16):
+for x in range(-14, 21):
     t.goto(x*10, func5(x))
 
 sleep(3)
