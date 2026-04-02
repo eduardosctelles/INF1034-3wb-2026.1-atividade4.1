@@ -56,9 +56,9 @@ t.clear()
 t.right(90)
 planocart()
 
-ir(1, func2(x*0.0001))
-for x in range(2, 300):
-    t.goto(x*10, func2(x)/1000)
+ir(1, func2(x*0.01))
+for x in range(2, 600):
+    t.goto(x/2, func2(x/2) * 50)
 
 sleep(3)
 t.clear()
