@@ -44,58 +44,56 @@ def func5(x):
  
 def func6(x):
     return x**3 - x**2 - x + 1
- 
+
 planocart()
-y_inicio = func1(-200)
-if y_inicio is not None:
-    ir(-200, y_inicio)
-for x in range(-99, 101):
-    y = func1(x)
-    if y is not None:
-        t.goto(x, y)
+
+ir(0, func1(0))
+for x in range(1, 300):
+    t.goto(x, func1(x*100))
 
 sleep(3)
 t.clear()
+t.right(90)
 planocart()
 
-y_inicio = func2(-200)
-if y_inicio is not None:
-    ir(-200, y_inicio)
-for x in range(-99, 101):
-    y = func2(x)
-    if y is not None:
-        t.goto(x, y)
+ir(1, func2(x*0.001))
+for x in range(2, 300):
+    t.goto(x, func2(x)/1000)
 
 sleep(3)
 t.clear()
+t.right(90)
 planocart()
 
-ir(-200, func3(-200))
-for x in range(-99, 101):
-    t.goto(x, func3(x))
+ir(-150, func3(-15))
+for x in range(-14, 16):
+    t.goto(x*10, func3(x))
 
 sleep(3)
 t.clear()
+t.right(90)
 planocart()
 
-ir(-200, func4(-200))
-for x in range(-99, 101):
-    t.goto(x, func4(x))
+ir(-150, func4(-15))
+for x in range(-14, 16):
+    t.goto(x*10, func4(x))
 
 sleep(3)
 t.clear()
+t.right(90)
 planocart()
 
-ir(-200, func5(-200))
-for x in range(-99, 101):
-    t.goto(x, func5(x))
+ir(-150, func5(-15))
+for x in range(-14, 16):
+    t.goto(x*10, func5(x))
 
 sleep(3)
 t.clear()
+t.right(90)
 planocart()
 
-ir(-200, func6(-200))
-for x in range(-99, 101):
-    t.goto(x, func6(x))
- 
+ir(-250, func6(-10))
+for x in range(-9, 11):
+    t.goto(x*25, func6(x))
+
 mainloop()
